@@ -7,9 +7,9 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Shader1 green
-  m_Shader: {fileID: 4800000, guid: aed5df47109e93e4f828a68230a4d075, type: 3}
-  m_Parent: {fileID: 2100000, guid: 39f1687aa2396094cb484a5a39c59769, type: 2}
+  m_Name: Unlit_MultiLighting
+  m_Shader: {fileID: 4800000, guid: af9e68e91696d8140bf401d1f697dda9, type: 3}
+  m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -23,32 +23,43 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - _DiffuseIBL:
+    - _DiffuseIBLTexture:
+        m_Texture: {fileID: 2800000, guid: 55cfc6f1a3611724cbfac853b692a2c3, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _IBLDiffuseLight:
+        m_Texture: {fileID: 2800000, guid: 55cfc6f1a3611724cbfac853b692a2c3, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _RockAlbedo:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 3abdaa566263d2348937152e3f351d76, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _RockHeight:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: d67b582fb861fba47a6e9dbb8d06981f, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _RockNormals:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 25d4414c805bf4546836363bc603d984, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _SpecularIBL:
-        m_Texture: {fileID: 0}
+    - _SpecularIBLTexture:
+        m_Texture: {fileID: 2800000, guid: d7cdf7cf97f44f04f817d6f1a33c67e7, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Gloss: 1
-    - _NormalIntensity: 1
+    - _Gloss: 0.62
+    - _RockHeightIntensity: 0.2
+    - _RockHeightScale: 0.077
+    - _RockNormalsScale: 0
+    - _SpecularIBLIntensity: 0.45
     m_Colors:
     - _AmbientLight: {r: 0, g: 0, b: 0, a: 0}
-    - _Color: {r: 0.5027845, g: 0.9137255, b: 0.21960783, a: 1}
+    - _ObjectColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
